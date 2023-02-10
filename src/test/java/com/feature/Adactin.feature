@@ -1,13 +1,11 @@
 Feature: Checking the hotel booking functionality of an Adactin application
-
-@smoketest
 Scenario: Login functionality
 Given user Must Launch The Url
 When user Enter The Username In The Username Field
 And user Enter The Password In The Password Field
 Then user Click The Login Button And It Navigates To Search Hotel Pages
 
-@smoketest1
+
 Scenario: Search functionality
 When user Select The Location From Location Field
 And user Select The Hotel From Hotel Field
@@ -19,12 +17,12 @@ And user Select Number Of Adult From Number Of Adult Field
 And user Select Number Of Children From Number Of Children Field
 Then user Click The Search Button And It Navigates To The Select Hotel Page
 
-@smoketest2
+
 Scenario: Select functionality
 When user Click The Check Box In Check Box Field
 Then user Click The Continue Button And It Navigates To The Book Hotel Page
 
-@smoketest3
+
 Scenario: Book hotel functionality
 When user Enter First Name In First Name Field
 And user Enter Last Name In Last Name Field

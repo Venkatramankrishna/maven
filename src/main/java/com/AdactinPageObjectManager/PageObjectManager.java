@@ -13,7 +13,7 @@ public class PageObjectManager {
 	
 	public PageObjectManager(WebDriver driver2) {
 		this.driver=driver2;
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 				
 	}
 	public static WebDriver getDriver() {
@@ -21,17 +21,17 @@ public class PageObjectManager {
 	}
 	private Adactin_login al;
 	public Adactin_login getAl() {
-		al=new Adactin_login(driver);
+		al=new Adactin_login(getDriver());
 		return al;
 	}
 	private Adactin_SearchHotel ash;
 	public Adactin_SearchHotel getAsh() {
-		ash=new Adactin_SearchHotel(driver);
+		ash=new Adactin_SearchHotel(getDriver());
 		return ash;
 	}
 	private Adactin_Booking ab;
 	public Adactin_Booking getAb() {
-		ab=new Adactin_Booking(driver);
+		ab=new Adactin_Booking(getDriver());
 		return ab;
 	}
 	

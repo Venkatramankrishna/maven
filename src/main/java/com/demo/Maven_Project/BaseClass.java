@@ -24,7 +24,7 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		return null;
+		return driver;
 		
 	}
 	public static void urlLaunch(String url) {
